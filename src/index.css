@@ -11,3 +11,98 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.content {
+  min-height: calc(100vh - 140px);
+  padding: 1.5rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Карточки с товарами */
+
+.MuiCardContent-root {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiCardActions-root {
+  display: flex;
+  padding: 8px;
+  align-items: flex-end;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item {
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+/* Корзина */
+
+.basket {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.basketList {
+  position: fixed;
+  bottom: 2rem;
+  right: 6rem;
+  cursor: pointer;
+  width: 40rem;
+  max-width: 95%;
+}
+
+@media (min-width: 767px) {
+  .basket, .basketList{
+    top: 5rem;
+    bottom: unset;
+    z-index: 8;
+  }
+}
+
+.btnClose {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.btnQuantity {
+  display: flex;
+  align-items: center;
+}
+
+.MuiListItemIcon-root {
+  justify-content: center;
+}
+
+.MuiTypography-root {
+  display: inline-flex;
+}
+
+
+/* Подсказка о добавлении товара */
+.prompt {
+  position: fixed;
+  top: 4rem;
+  right: 6rem;
+  cursor: pointer;
+  width: 20rem;
+  max-width: 95%;
+}
