@@ -22,6 +22,16 @@ code {
   width: 80%;
 }
 
+.gitLink {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  color: white !important
+}
+
 /* Карточки с товарами */
 
 .MuiCardContent-root {
@@ -58,6 +68,7 @@ code {
   bottom: 2rem;
   right: 2rem;
   cursor: pointer;
+  z-index: 8;
 }
 
 .basketList {
