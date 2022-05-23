@@ -1,5 +1,3 @@
-Second App made by React
+[React-Shop](https://marat20.github.io/React-shop)
 
-Used React and Material UI
-
-[Demo](https://marat20.github.io/React-shop)
+Stacks: HTML, CSS, JS, ReactJS
